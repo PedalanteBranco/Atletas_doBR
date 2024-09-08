@@ -1,0 +1,123 @@
+/* Estilo geral do corpo da página */
+body {
+    background-color: rgb(234, 245, 194); /* Cor de fundo suave */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinha itens ao centro */
+    height: auto; /* Altura automática */
+    margin: 0; /* Remove margens padrão */
+    font-family: Arial, sans-serif; /* Fonte legível */
+}
+
+/* Estilo do cabeçalho, conteúdo principal e rodapé */
+header, main, footer {
+    text-align: center;   
+    margin: 20px; /* Espaçamento entre seções */
+    padding: 20px; /* Preenchimento melhorado */
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo leve e mais opaco */
+    border-radius: 12px; /* Bordas arredondadas */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+/* Estilo dos títulos principais e subtítulos */
+h1 {
+    color: #2C3E50; /* Cor do título principal */
+    font-size: 2.5em; /* Tamanho do título principal */
+}
+h2 {
+    color: #34495E; /* Cor para cabeçalhos */
+    font-size: 1.8em; /* Tamanho dos subtítulos */
+    margin: 10px 0; /* Margem adicional para espaçamento */
+}
+
+/* Estilo dos botões */
+button {
+    background-color: #4CAF50; /* Cor verde para o botão */
+    color: white; /* Texto branco */
+    border: none; /* Remove a borda padrão */
+    padding: 10px 20px; /* Preenchimento do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Mudança de cursor ao passar sobre o botão */
+    font-size: 16px; /* Tamanho do texto do botão */
+    transition: background-color 0.3s; /* Transição suave para a cor do botão */
+}
+
+button:hover {
+    background-color: #45a049; /* Cor ao passar o mouse no botão */
+}
+
+/* Estilo do rodapé */
+footer p {
+    font-size: 14px; /* Ajuste no tamanho da fonte no rodapé */
+    color: #555; /* Cor mais suave para o texto do rodapé */
+}
+
+/* Estilizando a seção resultados-pesquisa */
+.resultados-pesquisa {
+    margin: 20px 0; /* Margem vertical */
+    padding: 15px; /* Preenchimento interno */
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semitransparente */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve para profundidade */
+    display: none; /* Inicialmente oculta */
+    transition: all 0.3s ease; /* Transição suave para efeitos */
+}
+
+/* Exibe a seção quando a classe 'visible' é adicionada */
+.resultados-pesquisa.visible {
+    display: block; /* Altera o display quando visível */
+}
+
+/* Estilo adicional para links */
+a {
+    color: #2980B9; /* Cor azul para links */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    transition: color 0.3s; /* Transição suave na cor do link */
+}
+
+a:hover {
+    color: #3498DB; /* Cor do link ao passar o mouse */
+}
+
+/* Estilo para seções de atleta */
+article {
+    margin: 20px 0; /* Margem entre seções de atletas */
+    padding: 15px; /* Preenchimento interno */
+    background-color: rgba(240, 240, 240, 0.9); /* Fundo levemente cinza */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+article h2 {
+    font-size: 1.5em; /* Tamanho dos títulos nas seções de atletas */
+    margin-bottom: 10px; /* Margem abaixo do título */
+}
+
+/* Estilo do aside */
+aside {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: rgba(245, 245, 245, 0.9); /* Fundo levemente diferente */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para o aside */
+}
+
+/* Ajuste para links na navegação */
+nav {
+    margin-bottom: 20px; /* Espaço entre a navegação e o conteúdo */
+}
+
+nav ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento padrão */
+}
+
+nav li {
+    display: inline; /* Alinha os itens da lista horizontalmente */
+    margin: 0 15px; /* Espaçamento entre os itens da lista */
+}
+
+/* Acessibilidade: tela cheia, foco e visualização */
+:focus {
+    outline: 2px dashed #2980B9; /* Destaca elementos focados */
+}
